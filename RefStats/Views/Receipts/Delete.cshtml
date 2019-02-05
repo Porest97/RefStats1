@@ -1,0 +1,141 @@
+﻿@model RefStats.Models.Receipt
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Receipt</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Receipt_Id)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Receipt_Id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MatchNumber)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MatchNumber)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MatchDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MatchDate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Match)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Match)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MatchRef1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MatchRef1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FeeRef1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FeeRef1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AllowanceRef1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AllowanceRef1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TravelCostRef1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TravelCostRef1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MatchRef2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MatchRef2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FeeRef2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FeeRef2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AllowanceRef2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AllowanceRef2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TravelCostRef2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TravelCostRef2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MatchRef3)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MatchRef3)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FeeRef3)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FeeRef3)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AllowanceRef3)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AllowanceRef3)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TravelCostRef3)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TravelCostRef3)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MatchRef4)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MatchRef4)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FeeRef4)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FeeRef4)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AllowanceRef4)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AllowanceRef4)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TravelCostRef4)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TravelCostRef4)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

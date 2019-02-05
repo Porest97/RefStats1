@@ -1,0 +1,125 @@
+﻿@model RefStats.Models.Receipt
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Receipt</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Receipt_Id" class="control-label"></label>
+                <input asp-for="Receipt_Id" class="form-control" />
+                <span asp-validation-for="Receipt_Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MatchNumber" class="control-label"></label>
+                <input asp-for="MatchNumber" class="form-control" />
+                <span asp-validation-for="MatchNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MatchDate" class="control-label"></label>
+                <input asp-for="MatchDate" class="form-control" />
+                <span asp-validation-for="MatchDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Match" class="control-label"></label>
+                <input asp-for="Match" class="form-control" />
+                <span asp-validation-for="Match" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MatchRef1" class="control-label"></label>
+                <input asp-for="MatchRef1" class="form-control" />
+                <span asp-validation-for="MatchRef1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FeeRef1" class="control-label"></label>
+                <input asp-for="FeeRef1" class="form-control" />
+                <span asp-validation-for="FeeRef1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AllowanceRef1" class="control-label"></label>
+                <input asp-for="AllowanceRef1" class="form-control" />
+                <span asp-validation-for="AllowanceRef1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TravelCostRef1" class="control-label"></label>
+                <input asp-for="TravelCostRef1" class="form-control" />
+                <span asp-validation-for="TravelCostRef1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MatchRef2" class="control-label"></label>
+                <input asp-for="MatchRef2" class="form-control" />
+                <span asp-validation-for="MatchRef2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FeeRef2" class="control-label"></label>
+                <input asp-for="FeeRef2" class="form-control" />
+                <span asp-validation-for="FeeRef2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AllowanceRef2" class="control-label"></label>
+                <input asp-for="AllowanceRef2" class="form-control" />
+                <span asp-validation-for="AllowanceRef2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TravelCostRef2" class="control-label"></label>
+                <input asp-for="TravelCostRef2" class="form-control" />
+                <span asp-validation-for="TravelCostRef2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MatchRef3" class="control-label"></label>
+                <input asp-for="MatchRef3" class="form-control" />
+                <span asp-validation-for="MatchRef3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FeeRef3" class="control-label"></label>
+                <input asp-for="FeeRef3" class="form-control" />
+                <span asp-validation-for="FeeRef3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AllowanceRef3" class="control-label"></label>
+                <input asp-for="AllowanceRef3" class="form-control" />
+                <span asp-validation-for="AllowanceRef3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TravelCostRef3" class="control-label"></label>
+                <input asp-for="TravelCostRef3" class="form-control" />
+                <span asp-validation-for="TravelCostRef3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MatchRef4" class="control-label"></label>
+                <input asp-for="MatchRef4" class="form-control" />
+                <span asp-validation-for="MatchRef4" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FeeRef4" class="control-label"></label>
+                <input asp-for="FeeRef4" class="form-control" />
+                <span asp-validation-for="FeeRef4" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AllowanceRef4" class="control-label"></label>
+                <input asp-for="AllowanceRef4" class="form-control" />
+                <span asp-validation-for="AllowanceRef4" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TravelCostRef4" class="control-label"></label>
+                <input asp-for="TravelCostRef4" class="form-control" />
+                <span asp-validation-for="TravelCostRef4" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

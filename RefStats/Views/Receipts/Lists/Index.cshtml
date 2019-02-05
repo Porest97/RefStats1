@@ -1,0 +1,149 @@
+﻿@model IEnumerable<RefStats.Models.Receipt>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Receipt_Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MatchNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MatchDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Match)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MatchRef1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FeeRef1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AllowanceRef1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TravelCostRef1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MatchRef2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FeeRef2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AllowanceRef2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TravelCostRef2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MatchRef3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FeeRef3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AllowanceRef3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TravelCostRef3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MatchRef4)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FeeRef4)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AllowanceRef4)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TravelCostRef4)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Receipt_Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MatchNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MatchDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Match)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MatchRef1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FeeRef1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AllowanceRef1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TravelCostRef1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MatchRef2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FeeRef2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AllowanceRef2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TravelCostRef2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MatchRef3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FeeRef3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AllowanceRef3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TravelCostRef3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MatchRef4)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FeeRef4)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AllowanceRef4)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TravelCostRef4)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
